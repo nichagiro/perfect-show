@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
-  (function () {
-    var t = null;
-    try { t = localStorage.getItem("theme"); } catch (e) {}
-    if (t !== "light" && t !== "dark") {
-      t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    }
-    document.documentElement.setAttribute("data-theme", t);
-  })();
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) { }
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
   </script>
   <title>Perfect Show | Animación Infantil, Cumpleaños y Fiestas en Cali</title>
-  <meta name="description" content="Perfect Show anima cumpleaños y eventos infantiles en Cali con shows de payaso, magia, globoflexia, pintacaritas y personajes temáticos. Cotiza tu fiesta por WhatsApp.">
+  <meta name="description"
+    content="Perfect Show anima cumpleaños y eventos infantiles en Cali con shows de payaso, magia, globoflexia, pintacaritas y personajes temáticos. Cotiza tu fiesta por WhatsApp.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://perfectshow.online">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Perfect Show | Animación Infantil y Fiestas en Cali">
-  <meta property="og:description" content="Animamos cumpleaños y eventos infantiles en Cali con shows de payaso, magia, globoflexia y más. Cotiza por WhatsApp.">
+  <meta property="og:description"
+    content="Animamos cumpleaños y eventos infantiles en Cali con shows de payaso, magia, globoflexia y más. Cotiza por WhatsApp.">
   <meta property="og:url" content="https://perfectshow.online">
   <meta property="og:locale" content="es_CO">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Perfect Show | Animación Infantil y Fiestas en Cali">
-  <meta name="twitter:description" content="Animamos cumpleaños y eventos infantiles en Cali con shows de payaso, magia, globoflexia y más.">
+  <meta name="twitter:description"
+    content="Animamos cumpleaños y eventos infantiles en Cali con shows de payaso, magia, globoflexia y más.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -99,6 +105,7 @@
   }
   </script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
 
@@ -106,9 +113,11 @@
     <div class="wrap site-header__inner">
       <a class="brand" href="#top" aria-label="Perfect Show, inicio">
         <svg class="brand__mark" viewBox="0 0 32 40" aria-hidden="true">
-          <path d="M16 2C9.4 2 4.5 7.4 4.5 14.5c0 5 2.8 8.4 2.8 12h17.4c0-3.6 2.8-7 2.8-12C27.5 7.4 22.6 2 16 2Z" fill="currentColor"/>
-          <path d="M13.5 26.5h5l1 4.5h-7Z" fill="currentColor" opacity=".85"/>
-          <path d="M14 31c0 2.6-2 3.6-2 5.2M18 31c0 2.6 2 3.6 2 5.2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M16 2C9.4 2 4.5 7.4 4.5 14.5c0 5 2.8 8.4 2.8 12h17.4c0-3.6 2.8-7 2.8-12C27.5 7.4 22.6 2 16 2Z"
+            fill="currentColor" />
+          <path d="M13.5 26.5h5l1 4.5h-7Z" fill="currentColor" opacity=".85" />
+          <path d="M14 31c0 2.6-2 3.6-2 5.2M18 31c0 2.6 2 3.6 2 5.2" stroke="currentColor" stroke-width="1.5"
+            fill="none" stroke-linecap="round" />
         </svg>
         <span class="brand__name">Perfect Show</span>
       </a>
@@ -124,10 +133,20 @@
         <a href="#opiniones">Opiniones</a>
         <a href="#planes">Planes</a>
         <a href="#faq">Preguntas</a>
-        <a class="btn btn--fiesta btn--sm nav-cta" href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20quiero%20cotizar%20una%20fiesta%20infantil." target="_blank" rel="noopener">Cotizar</a>
+        <a class="btn btn--fiesta btn--sm nav-cta"
+          href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20quiero%20cotizar%20una%20fiesta%20infantil."
+          target="_blank" rel="noopener">Cotizar</a>
         <button class="theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Cambiar a modo oscuro">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+          </svg>
         </button>
       </nav>
     </div>
@@ -143,15 +162,23 @@
         <div class="hero__copy">
           <p class="hero__badge">
             <span aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
             </span>
             Animación de fiestas infantiles
           </p>
           <h1>Su sonrisa manda en la fiesta</h1>
-          <p class="hero__lede">Perfect Show lleva shows, juegos y pura diversión a cumpleaños y eventos infantiles. Tú elijes el tema; nosotros llegamos con toda la alegría.</p>
+          <p class="hero__lede">Perfect Show lleva shows, juegos y pura diversión a cumpleaños y eventos infantiles. Tú
+            elijes el tema; nosotros llegamos con toda la alegría.</p>
           <div class="hero__actions">
-            <a class="btn btn--fiesta btn--lg" href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20quiero%20cotizar%20una%20fiesta%20infantil." target="_blank" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            <a class="btn btn--fiesta btn--lg"
+              href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20quiero%20cotizar%20una%20fiesta%20infantil."
+              target="_blank" rel="noopener">
+              <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+              </svg>
               Cotiza tu fiesta
             </a>
             <a class="btn btn--ghost btn--lg" href="#servicios">Ver servicios</a>
@@ -169,28 +196,34 @@
           <span class="hero__star hero__star--c">✦</span>
           <span class="hero__star hero__star--d">✦</span>
           <svg class="bloon bloon--pink" viewBox="0 0 64 82" aria-hidden="true">
-            <path d="M32 6C19 6 8.5 15.6 8.5 29c0 9 5 15.6 5 21.5h37c0-5.9 5-12.5 5-21.5C55.5 15.6 45 6 32 6Z" fill="currentColor"/>
-            <path d="M25.5 50.5h13l2.5 8h-18Z" fill="currentColor" opacity=".8"/>
-            <path d="M26.5 60c1 1.4 2.4 2.6 3 4M34.5 60c-1.4 1.6-2.2 3-2.6 4.6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-            <ellipse cx="23" cy="16" rx="7.5" ry="10" fill="#fff" opacity=".3" transform="rotate(-24 23 16)"/>
+            <path d="M32 6C19 6 8.5 15.6 8.5 29c0 9 5 15.6 5 21.5h37c0-5.9 5-12.5 5-21.5C55.5 15.6 45 6 32 6Z"
+              fill="currentColor" />
+            <path d="M25.5 50.5h13l2.5 8h-18Z" fill="currentColor" opacity=".8" />
+            <path d="M26.5 60c1 1.4 2.4 2.6 3 4M34.5 60c-1.4 1.6-2.2 3-2.6 4.6" stroke="currentColor" stroke-width="1.6"
+              fill="none" stroke-linecap="round" />
+            <ellipse cx="23" cy="16" rx="7.5" ry="10" fill="#fff" opacity=".3" transform="rotate(-24 23 16)" />
           </svg>
           <svg class="bloon bloon--mint" viewBox="0 0 64 82" aria-hidden="true">
-            <path d="M32 6C19 6 8.5 15.6 8.5 29c0 9 5 15.6 5 21.5h37c0-5.9 5-12.5 5-21.5C55.5 15.6 45 6 32 6Z" fill="currentColor"/>
-            <path d="M25.5 50.5h13l2.5 8h-18Z" fill="currentColor" opacity=".8"/>
-            <path d="M26.5 60c1 1.4 2.4 2.6 3 4M34.5 60c-1.4 1.6-2.2 3-2.6 4.6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-            <ellipse cx="23" cy="16" rx="7.5" ry="10" fill="#fff" opacity=".3" transform="rotate(-24 23 16)"/>
+            <path d="M32 6C19 6 8.5 15.6 8.5 29c0 9 5 15.6 5 21.5h37c0-5.9 5-12.5 5-21.5C55.5 15.6 45 6 32 6Z"
+              fill="currentColor" />
+            <path d="M25.5 50.5h13l2.5 8h-18Z" fill="currentColor" opacity=".8" />
+            <path d="M26.5 60c1 1.4 2.4 2.6 3 4M34.5 60c-1.4 1.6-2.2 3-2.6 4.6" stroke="currentColor" stroke-width="1.6"
+              fill="none" stroke-linecap="round" />
+            <ellipse cx="23" cy="16" rx="7.5" ry="10" fill="#fff" opacity=".3" transform="rotate(-24 23 16)" />
           </svg>
           <svg class="bloon bloon--sun" viewBox="0 0 64 82" aria-hidden="true">
-            <path d="M32 6C19 6 8.5 15.6 8.5 29c0 9 5 15.6 5 21.5h37c0-5.9 5-12.5 5-21.5C55.5 15.6 45 6 32 6Z" fill="currentColor"/>
-            <path d="M25.5 50.5h13l2.5 8h-18Z" fill="currentColor" opacity=".8"/>
-            <path d="M26.5 60c1 1.4 2.4 2.6 3 4M34.5 60c-1.4 1.6-2.2 3-2.6 4.6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-            <ellipse cx="23" cy="16" rx="7.5" ry="10" fill="#fff" opacity=".3" transform="rotate(-24 23 16)"/>
+            <path d="M32 6C19 6 8.5 15.6 8.5 29c0 9 5 15.6 5 21.5h37c0-5.9 5-12.5 5-21.5C55.5 15.6 45 6 32 6Z"
+              fill="currentColor" />
+            <path d="M25.5 50.5h13l2.5 8h-18Z" fill="currentColor" opacity=".8" />
+            <path d="M26.5 60c1 1.4 2.4 2.6 3 4M34.5 60c-1.4 1.6-2.2 3-2.6 4.6" stroke="currentColor" stroke-width="1.6"
+              fill="none" stroke-linecap="round" />
+            <ellipse cx="23" cy="16" rx="7.5" ry="10" fill="#fff" opacity=".3" transform="rotate(-24 23 16)" />
           </svg>
         </div>
       </div>
 
       <svg class="hero__wave" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0,70 C240,120 480,25 720,48 C960,70 1200,115 1440,60 L1440,130 L0,130 Z" fill="var(--paper)"/>
+        <path d="M0,70 C240,120 480,25 720,48 C960,70 1200,115 1440,60 L1440,130 L0,130 Z" fill="var(--paper)" />
       </svg>
     </section>
 
@@ -210,15 +243,19 @@
         <div class="section-head">
           <span class="pill pill--pink">El show</span>
           <h2>Servicios para cada rato de la fiesta</h2>
-          <p class="section-head__lede">Elige una experiencia o combina varias. Todos nuestros servicios incluyen material, música y un animador que se roba las risas.</p>
+          <p class="section-head__lede">Elige una experiencia o combina varias. Todos nuestros servicios incluyen
+            material, música y un animador que se roba las risas.</p>
         </div>
 
         <div class="services__grid">
           <article class="service reveal">
             <span class="service__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-                <circle cx="12" cy="14" r="7"/><path d="M8.7 11.6h.01M15.3 11.6h.01"/>
-                <path d="M8 17.2c1.4 1.6 6.6 1.6 8 0"/><path d="M12 7V4.8M9.6 5.6 12 3.2l2.4 2.4"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                aria-hidden="true">
+                <circle cx="12" cy="14" r="7" />
+                <path d="M8.7 11.6h.01M15.3 11.6h.01" />
+                <path d="M8 17.2c1.4 1.6 6.6 1.6 8 0" />
+                <path d="M12 7V4.8M9.6 5.6 12 3.2l2.4 2.4" />
               </svg>
             </span>
             <h3>Show de payaso</h3>
@@ -228,9 +265,10 @@
 
           <article class="service reveal">
             <span class="service__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-                <path d="M12 3a6 6 0 0 0-6 6c0 3.4 2.3 5.7 2.3 8.2h7.4c0-2.5 2.3-4.8 2.3-8.2a6 6 0 0 0-6-6Z"/>
-                <path d="M10.6 17.2 9.8 21M13.4 17.2l.8 3.8"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                aria-hidden="true">
+                <path d="M12 3a6 6 0 0 0-6 6c0 3.4 2.3 5.7 2.3 8.2h7.4c0-2.5 2.3-4.8 2.3-8.2a6 6 0 0 0-6-6Z" />
+                <path d="M10.6 17.2 9.8 21M13.4 17.2l.8 3.8" />
               </svg>
             </span>
             <h3>Globoflexia</h3>
@@ -240,8 +278,11 @@
 
           <article class="service reveal">
             <span class="service__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M14.5 3.5 20.5 9.5 8.5 21.5l-6-6Z"/><path d="M3 21l3-3"/><path d="M14.5 8.5l1 1"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M14.5 3.5 20.5 9.5 8.5 21.5l-6-6Z" />
+                <path d="M3 21l3-3" />
+                <path d="M14.5 8.5l1 1" />
               </svg>
             </span>
             <h3>Pintacaritas</h3>
@@ -251,8 +292,11 @@
 
           <article class="service reveal">
             <span class="service__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4 20 15 9"/><path d="M16 5l3 3"/><path d="M12.5 2.5l.9 2.5 2.1.4-1.6 1.5.4 2.1-1.8-1.1-1.8 1.1.4-2.1-1.6-1.5 2.1-.4Z"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 20 15 9" />
+                <path d="M16 5l3 3" />
+                <path d="M12.5 2.5l.9 2.5 2.1.4-1.6 1.5.4 2.1-1.8-1.1-1.8 1.1.4-2.1-1.6-1.5 2.1-.4Z" />
               </svg>
             </span>
             <h3>Show de magia</h3>
@@ -262,8 +306,12 @@
 
           <article class="service reveal">
             <span class="service__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M8.5 17.5V6.5" /><path d="M8.5 6.5 16.5 5v11.5" /><circle cx="6.5" cy="17.5" r="2"/><circle cx="14.5" cy="16.5" r="2"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M8.5 17.5V6.5" />
+                <path d="M8.5 6.5 16.5 5v11.5" />
+                <circle cx="6.5" cy="17.5" r="2" />
+                <circle cx="14.5" cy="16.5" r="2" />
               </svg>
             </span>
             <h3>Dinámicas y juegos</h3>
@@ -273,8 +321,10 @@
 
           <article class="service reveal">
             <span class="service__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4.5 17.5 6 8.5l4 3 2-5 2 5 4-3 1.5 9Z"/><path d="M4 17.5h16"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M4.5 17.5 6 8.5l4 3 2-5 2 5 4-3 1.5 9Z" />
+                <path d="M4 17.5h16" />
               </svg>
             </span>
             <h3>Personajes temáticos</h3>
@@ -290,7 +340,8 @@
         <div class="section-head">
           <span class="pill pill--sun">Así de fácil</span>
           <h2>Tu fiesta en tres pasos</h2>
-          <p class="section-head__lede">Sin trámites ni misterios: reservas por WhatsApp y nosotros nos encargamos del resto.</p>
+          <p class="section-head__lede">Sin trámites ni misterios: reservas por WhatsApp y nosotros nos encargamos del
+            resto.</p>
         </div>
 
         <ol class="process__list">
@@ -318,48 +369,75 @@
         <div class="section-head">
           <span class="pill pill--mint">Temáticas</span>
           <h2>Los favoritos de los peques</h2>
-          <p class="section-head__lede">Tu peque elige su mundo soñado y nosotros lo hacemos realidad, desde la decoración hasta el personaje.</p>
+          <p class="section-head__lede">Tu peque elige su mundo soñado y nosotros lo hacemos realidad, desde la
+            decoración hasta el personaje.</p>
         </div>
 
         <div class="themes__grid">
           <div class="theme theme--princess reveal">
             <span class="theme__glyph" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="currentColor"><path d="M8 34h32M12 34V18l8 6 4-10 4 10 8-6v16"/><circle cx="24" cy="8" r="2.5"/></svg>
+              <svg viewBox="0 0 48 48" fill="currentColor">
+                <path d="M8 34h32M12 34V18l8 6 4-10 4 10 8-6v16" />
+                <circle cx="24" cy="8" r="2.5" />
+              </svg>
             </span>
             <h3>Princesas y caballeros</h3>
             <p>Castillos, varitas y muchos votes.</p>
           </div>
           <div class="theme theme--super reveal">
             <span class="theme__glyph" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="currentColor"><path d="M26 4 8 26h12l-2 18 20-24H24Z"/></svg>
+              <svg viewBox="0 0 48 48" fill="currentColor">
+                <path d="M26 4 8 26h12l-2 18 20-24H24Z" />
+              </svg>
             </span>
             <h3>Superhéroes</h3>
             <p>Capas, máscaras y fuerzas especiales.</p>
           </div>
           <div class="theme theme--safari reveal">
             <span class="theme__glyph" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="currentColor"><ellipse cx="24" cy="40" rx="12" ry="7"/><circle cx="14" cy="28" r="5.5"/><circle cx="24" cy="22" r="7"/><circle cx="34" cy="28" r="5.5"/><path d="M24 15c-1-2.5-4-4-7-3" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 48 48" fill="currentColor">
+                <ellipse cx="24" cy="40" rx="12" ry="7" />
+                <circle cx="14" cy="28" r="5.5" />
+                <circle cx="24" cy="22" r="7" />
+                <circle cx="34" cy="28" r="5.5" />
+                <path d="M24 15c-1-2.5-4-4-7-3" stroke="currentColor" stroke-width="3" fill="none"
+                  stroke-linecap="round" />
+              </svg>
             </span>
             <h3>Safari de animales</h3>
             <p>Jungla de juegos y pintacaritas.</p>
           </div>
           <div class="theme theme--bubbles reveal">
             <span class="theme__glyph" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="currentColor"><circle cx="14" cy="26" r="9"/><circle cx="32" cy="18" r="5"/><circle cx="34" cy="32" r="3.5"/></svg>
+              <svg viewBox="0 0 48 48" fill="currentColor">
+                <circle cx="14" cy="26" r="9" />
+                <circle cx="32" cy="18" r="5" />
+                <circle cx="34" cy="32" r="3.5" />
+              </svg>
             </span>
             <h3>Fiesta de burbujas</h3>
             <p>Miles de burbujas que no paran de volar.</p>
           </div>
           <div class="theme theme--dino reveal">
             <span class="theme__glyph" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="currentColor"><path d="M24 10c-8 0-14 6-14 13a14 14 0 0 0 28 0c0-7-6-13-14-13Z"/><circle cx="18" cy="20" r="2.5" fill="#2f1e10"/><circle cx="30" cy="20" r="2.5" fill="#2f1e10"/><path d="M19 27c3 2.5 7 2.5 10 0" stroke="#2f1e10" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 48 48" fill="currentColor">
+                <path d="M24 10c-8 0-14 6-14 13a14 14 0 0 0 28 0c0-7-6-13-14-13Z" />
+                <circle cx="18" cy="20" r="2.5" fill="#2f1e10" />
+                <circle cx="30" cy="20" r="2.5" fill="#2f1e10" />
+                <path d="M19 27c3 2.5 7 2.5 10 0" stroke="#2f1e10" stroke-width="2.5" fill="none"
+                  stroke-linecap="round" />
+              </svg>
             </span>
             <h3>Dinosaurios</h3>
             <p>Expediciones prehistóricas y huellas.</p>
           </div>
           <div class="theme theme--cine reveal">
             <span class="theme__glyph" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="currentColor"><path d="M8 12h32v8H8Z"/><path d="M8 20h32v16H8Z" opacity=".55"/><path d="M14 28l8-5-8-5Z"/></svg>
+              <svg viewBox="0 0 48 48" fill="currentColor">
+                <path d="M8 12h32v8H8Z" />
+                <path d="M8 20h32v16H8Z" opacity=".55" />
+                <path d="M14 28l8-5-8-5Z" />
+              </svg>
             </span>
             <h3>Cine y series favoritas</h3>
             <p>Su universo favorito, en vivo.</p>
@@ -380,39 +458,72 @@
           <figure class="quote reveal">
             <span class="quote__mark" aria-hidden="true">”</span>
             <div class="quote__stars" aria-label="Cinco estrellas">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
             </div>
-            <blockquote>Contraté el show de payaso para los cinco años de mi hija y los niños no querían que terminara. Ya estamos guardando la fecha del próximo cumple.</blockquote>
+            <blockquote>Contraté el show de payaso para los cinco años de mi hija y los niños no querían que terminara.
+              Ya estamos guardando la fecha del próximo cumple.</blockquote>
             <figcaption>Laura · mamá de Emma</figcaption>
           </figure>
 
           <figure class="quote reveal">
             <span class="quote__mark" aria-hidden="true">”</span>
             <div class="quote__stars" aria-label="Cinco estrellas">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
             </div>
-            <blockquote>Llegaron puntuales, súper organizados y con material para todos los invitados. Hasta los papás nos subimos a las dinámicas.</blockquote>
+            <blockquote>Llegaron puntuales, súper organizados y con material para todos los invitados. Hasta los papás
+              nos subimos a las dinámicas.</blockquote>
             <figcaption>Camilo y Andrea · padres de Mateo</figcaption>
           </figure>
 
           <figure class="quote reveal">
             <span class="quote__mark" aria-hidden="true">”</span>
             <div class="quote__stars" aria-label="Cinco estrellas">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.86.6-5.2 4.52 1.54 6.72L12 16.9l-6.1 3.2 1.54-6.72-5.2-4.52 6.86-.6Z" />
+              </svg>
             </div>
-            <blockquote>La fiesta de burbujas fue un éxito total. Todo limpio, seguro y ajustado a la edad de los invitados. Sin drama para los papás.</blockquote>
+            <blockquote>La fiesta de burbujas fue un éxito total. Todo limpio, seguro y ajustado a la edad de los
+              invitados. Sin drama para los papás.</blockquote>
             <figcaption>Juliana · mamá de Simón</figcaption>
           </figure>
         </div>
@@ -424,7 +535,8 @@
         <div class="section-head">
           <span class="pill pill--sun">Planes</span>
           <h2>Elige el plan que haga falta</h2>
-          <p class="section-head__lede">Precios desde, ajustados 100% a tu fecha. Cotiza por WhatsApp y te enviamos el número exacto.</p>
+          <p class="section-head__lede">Precios desde, ajustados 100% a tu fecha. Cotiza por WhatsApp y te enviamos el
+            número exacto.</p>
         </div>
 
         <div class="packages__grid">
@@ -434,13 +546,26 @@
               <span class="package__time">45–60 min</span>
             </div>
             <ul class="package__list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> 1 animador o animadora</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Juegos clásicos y dinámicas</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Globoflexia básica</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Música y sonido portátil</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> Animación y recreación</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> Juegos clásicos y dinámicas</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> Concursos de baile</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> Rifas tipo concurso</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> Música para el evento</li>
             </ul>
-            <div class="package__price"><span>Desde</span> $280.000</div>
-            <a class="btn btn--fiesta" href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20me%20interesa%20el%20paquete%20B%C3%A1sico%20para%20una%20fiesta%20infantil." target="_blank" rel="noopener">Cotizar este plan</a>
+            <div class="package__price"><span>Desde</span> $150.000</div>
+            <a class="btn btn--fiesta"
+              href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20me%20interesa%20el%20paquete%20B%C3%A1sico%20para%20una%20fiesta%20infantil."
+              target="_blank" rel="noopener">Cotizar este plan</a>
           </article>
 
           <article class="package package--featured reveal">
@@ -450,30 +575,45 @@
               <span class="package__time">90–120 min</span>
             </div>
             <ul class="package__list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> 2 animadores o animadoras</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Show de payaso + magia</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Temática personalizada</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Pintacaritas completa</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Mini gimkana por equipos</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> Plan Básico</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> 2 animadores</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> Show de títeres</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> Globoflexia</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> Pintacaritas</li>
             </ul>
-            <div class="package__price"><span>Desde</span> $520.000</div>
-            <a class="btn btn--fiesta" href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20me%20interesa%20el%20paquete%20Fiesta%20Perfecta%20para%20una%20fiesta%20infantil." target="_blank" rel="noopener">Cotizar este plan</a>
+            <div class="package__price"><span>Desde</span> $225.000</div>
+            <a class="btn btn--fiesta"
+              href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20me%20interesa%20el%20paquete%20Fiesta%20Perfecta%20para%20una%20fiesta%20infantil."
+              target="_blank" rel="noopener">Cotizar este plan</a>
           </article>
 
           <article class="package reveal">
             <div class="package__top">
               <h3>Gran Evento</h3>
-              <span class="package__time">3 horas en adelante</span>
+              <span class="package__time">3 horas</span>
             </div>
             <ul class="package__list">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Todo lo del plan Perfecta</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Personaje temático en vivo</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Decoración básica del espacio</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Audio amplificado para exteriores</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg> Coordinador de evento</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> Todo lo de la Fiesta Perfecta</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10" />
+                </svg> Personaje temático en vivo</li>
             </ul>
-            <div class="package__price"><span>Desde</span> $890.000</div>
-            <a class="btn btn--fiesta" href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20me%20interesa%20el%20paquete%20Gran%20Evento%20para%20una%20fiesta%20infantil." target="_blank" rel="noopener">Cotizar este plan</a>
+            <div class="package__price"><span>Desde</span> $300.000</div>
+            <a class="btn btn--fiesta"
+              href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20me%20interesa%20el%20paquete%20Gran%20Evento%20para%20una%20fiesta%20infantil."
+              target="_blank" rel="noopener">Cotizar este plan</a>
           </article>
         </div>
       </div>
@@ -490,46 +630,66 @@
         <div class="faq__list">
           <div class="faq-item">
             <h3>
-              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-a" id="faq-q1">¿En qué lugares hacemos las fiestas?</button>
+              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-a" id="faq-q1">¿En qué lugares
+                hacemos las fiestas?</button>
             </h3>
             <div class="faq-item__panel" id="faq-a" role="region" aria-labelledby="faq-q1">
-              <div class="faq-item__inner"><p>Trabajamos en casa, en salones sociales, parques o el espacio que elijas. Si la cita es fuera de nuestra zona, te lo confirmamos con gusto en la cotización.</p></div>
+              <div class="faq-item__inner">
+                <p>Trabajamos en casa, en salones sociales, parques o el espacio que elijas. Si la cita es fuera de
+                  nuestra zona, te lo confirmamos con gusto en la cotización.</p>
+              </div>
             </div>
           </div>
 
           <div class="faq-item">
             <h3>
-              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-b" id="faq-q2">¿Cuánto dura cada show?</button>
+              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-b" id="faq-q2">¿Cuánto dura cada
+                show?</button>
             </h3>
             <div class="faq-item__panel" id="faq-b" role="region" aria-labelledby="faq-q2">
-              <div class="faq-item__inner"><p>Los shows van de 45 minutos a 3 horas. Para cumpleaños infantiles lo recomendado es entre 60 y 120 minutos, y tú decides el ritmo del día.</p></div>
+              <div class="faq-item__inner">
+                <p>Los shows van de 45 minutos a 3 horas. Para cumpleaños infantiles lo recomendado es entre 60 y 120
+                  minutos, y tú decides el ritmo del día.</p>
+              </div>
             </div>
           </div>
 
           <div class="faq-item">
             <h3>
-              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-c" id="faq-q3">¿Qué pasa si llueve en una fiesta al aire libre?</button>
+              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-c" id="faq-q3">¿Qué pasa si llueve
+                en una fiesta al aire libre?</button>
             </h3>
             <div class="faq-item__panel" id="faq-c" role="region" aria-labelledby="faq-q3">
-              <div class="faq-item__inner"><p>Tenemos un plan para el clima. Ante riesgo de lluvia te acompañamos a cambiar el espacio o mover la fecha sin vueltas, siempre que haya disponibilidad.</p></div>
+              <div class="faq-item__inner">
+                <p>Tenemos un plan para el clima. Ante riesgo de lluvia te acompañamos a cambiar el espacio o mover la
+                  fecha sin vueltas, siempre que haya disponibilidad.</p>
+              </div>
             </div>
           </div>
 
           <div class="faq-item">
             <h3>
-              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-d" id="faq-q4">¿Cómo reservo mi fecha?</button>
+              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-d" id="faq-q4">¿Cómo reservo mi
+                fecha?</button>
             </h3>
             <div class="faq-item__panel" id="faq-d" role="region" aria-labelledby="faq-q4">
-              <div class="faq-item__inner"><p>Reservas tu fecha con un anticipo del 30% y el resto se paga el día del evento. Todo el proceso lo manejamos por WhatsApp, sin letra pequeña.</p></div>
+              <div class="faq-item__inner">
+                <p>Reservas tu fecha con un anticipo del 30% y el resto se paga el día del evento. Todo el proceso lo
+                  manejamos por WhatsApp, sin letra pequeña.</p>
+              </div>
             </div>
           </div>
 
           <div class="faq-item">
             <h3>
-              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-e" id="faq-q5">¿Qué incluye el traslado?</button>
+              <button class="faq-item__btn" aria-expanded="false" aria-controls="faq-e" id="faq-q5">¿Qué incluye el
+                traslado?</button>
             </h3>
             <div class="faq-item__panel" id="faq-e" role="region" aria-labelledby="faq-q5">
-              <div class="faq-item__inner"><p>La mayoría de los planes incluye el traslado dentro de la ciudad. Si el evento queda más lejos, te lo indicamos claro en la cotización antes de que decidas.</p></div>
+              <div class="faq-item__inner">
+                <p>La mayoría de los planes incluye el traslado dentro de la ciudad. Si el evento queda más lejos, te lo
+                  indicamos claro en la cotización antes de que decidas.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -541,8 +701,13 @@
         <div class="closing__card">
           <h2>¿Listos para la mejor fiesta de su infancia?</h2>
           <p>Escríbenos hoy, cuéntanos la fecha y en minutos tienes tu cotización sin compromiso.</p>
-          <a class="btn btn--fiesta btn--lg" href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20quiero%20agendar%20una%20fiesta%20infantil." target="_blank" rel="noopener">
-            <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          <a class="btn btn--fiesta btn--lg"
+            href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20quiero%20agendar%20una%20fiesta%20infantil."
+            target="_blank" rel="noopener">
+            <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+            </svg>
             Escríbenos por WhatsApp
           </a>
           <p class="closing__note">Respondemos de lunes a domingo · Cotización sin compromiso</p>
@@ -556,9 +721,11 @@
       <div class="footer__brand">
         <a class="brand" href="#top" aria-label="Perfect Show, inicio">
           <svg class="brand__mark" viewBox="0 0 32 40" aria-hidden="true">
-            <path d="M16 2C9.4 2 4.5 7.4 4.5 14.5c0 5 2.8 8.4 2.8 12h17.4c0-3.6 2.8-7 2.8-12C27.5 7.4 22.6 2 16 2Z" fill="currentColor"/>
-            <path d="M13.5 26.5h5l1 4.5h-7Z" fill="currentColor" opacity=".85"/>
-            <path d="M14 31c0 2.6-2 3.6-2 5.2M18 31c0 2.6 2 3.6 2 5.2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M16 2C9.4 2 4.5 7.4 4.5 14.5c0 5 2.8 8.4 2.8 12h17.4c0-3.6 2.8-7 2.8-12C27.5 7.4 22.6 2 16 2Z"
+              fill="currentColor" />
+            <path d="M13.5 26.5h5l1 4.5h-7Z" fill="currentColor" opacity=".85" />
+            <path d="M14 31c0 2.6-2 3.6-2 5.2M18 31c0 2.6 2 3.6 2 5.2" stroke="currentColor" stroke-width="1.5"
+              fill="none" stroke-linecap="round" />
           </svg>
           <span class="brand__name">Perfect Show</span>
         </a>
@@ -589,11 +756,17 @@
     </div>
   </footer>
 
-  <a class="fab" href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20quiero%20cotizar%20una%20fiesta%20infantil." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <a class="fab"
+    href="https://wa.me/573174865702?text=Hola%20Perfect%20Show%2C%20quiero%20cotizar%20una%20fiesta%20infantil."
+    target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+    </svg>
     <span class="fab__label">¿Listos para la fiesta?</span>
   </a>
 
   <script src="script.js"></script>
 </body>
+
 </html>
